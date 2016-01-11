@@ -23,7 +23,13 @@ body {
 .box img {
 	height: 100px;
 }
+.links {
+	background-color: #7F3F98;
+}
 .links img {
 	display: inline-block;
 	height: 50px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: white;
 }
