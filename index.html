@@ -30,22 +30,69 @@
 				<p>insert stuff about sim here</p>
 			</div>
 		</div>
-		<h1>Smogon University</h1>
-		<p>Welcome to Smogon blah blah blah</p>
-		<div class="links">
-			<img src="http://cdn.bulbagarden.net/upload/d/dd/Boulder_Badge.png" />
-			<img src="http://cdn.bulbagarden.net/upload/9/9c/Cascade_Badge.png" />
-			<img src="http://cdn.bulbagarden.net/upload/a/a6/Thunder_Badge.png" />
-			<img src="http://cdn.bulbagarden.net/upload/7/7d/Soul_Badge.png" />
-			<img src="http://cdn.bulbagarden.net/upload/1/12/Volcano_Badge.png" />
-			<img src="http://cdn.bulbagarden.net/upload/0/08/Hive_Badge.png" />
-			<img src="http://cdn.bulbagarden.net/upload/a/a7/Plain_Badge.png" />
-			<img src="http://cdn.bulbagarden.net/upload/4/48/Fog_Badge.png" />
-			<img src="http://cdn.bulbagarden.net/upload/b/b9/Storm_Badge.png" />
-			<img src="http://cdn.bulbagarden.net/upload/e/e6/Glacier_Badge.png" />
-			<img src="http://cdn.bulbagarden.net/upload/c/c4/Heat_Badge.png" />
-			<img src="http://cdn.bulbagarden.net/upload/6/62/Feather_Badge.png" />
+		<div class="text">
+			<h1>Smogon University</h1>
+			<p>Welcome to Smogon blah blah blah</p>
 		</div>
- 
+		<div class="links">
+		    <input type="image" src="http://cdn.bulbagarden.net/upload/d/dd/Boulder_Badge.png" data-id="0" />
+            <input type="image" src="http://cdn.bulbagarden.net/upload/9/9c/Cascade_Badge.png" data-id="1" />
+            <input type="image" src="http://cdn.bulbagarden.net/upload/a/a6/Thunder_Badge.png" data-id="2" />
+            <input type="image" src="http://cdn.bulbagarden.net/upload/7/7d/Soul_Badge.png" data-id="3" />
+            <input type="image" src="http://cdn.bulbagarden.net/upload/1/12/Volcano_Badge.png" data-id="4" />
+            <input type="image" src="http://cdn.bulbagarden.net/upload/0/08/Hive_Badge.png" data-id="5" />
+            <input type="image" src="http://cdn.bulbagarden.net/upload/a/a7/Plain_Badge.png" data-id="6" />
+            <input type="image" src="http://cdn.bulbagarden.net/upload/4/48/Fog_Badge.png" data-id="7" />
+            <input type="image" src="http://cdn.bulbagarden.net/upload/b/b9/Storm_Badge.png" data-id="8" />
+            <input type="image" src="http://cdn.bulbagarden.net/upload/e/e6/Glacier_Badge.png" data-id="9" />
+            <input type="image" src="http://cdn.bulbagarden.net/upload/c/c4/Heat_Badge.png" data-id="10" />
+            <input type="image" src="http://cdn.bulbagarden.net/upload/6/62/Feather_Badge.png" data-id="11" />
+			
+			<div class="info" data-id="0">
+				<div class="info-text">
+					<h2>Simulator News:</h2>
+					<p>blah blah</p>
+				</div>
+			</div>
+			<div class="info" data-id="1">
+				<div class="info-text">
+					<h2>Contributions and Corrections News:</h2>
+					<p>blah blah</p>
+				</div>
+			</div>
+			<div class="info" data-id="2">
+				<div class="info-text">
+					<h2>IRC News:</h2>
+					<p>blah blah</p>
+				</div>
+			</div>
+			<div class="info" data-id="3">
+				<div class="info-text">
+					<h2>Battling 101 News:</h2>
+					<p>blah blah</p>
+				</div>
+			</div>
+		</div>
     </body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // Hide the info
+        $('.info').hide();
+   
+        // Handle click on btn
+        $(".links input").click(function () {
+            var $openinfo = $('.info:visible');
+            $openinfo.hide(800);
+       
+            var id = $(this).data('id');
+            console.log($openinfo);
+            if (!$openinfo.length || id !== $openinfo.data('id')) {
+                $('.info[data-id="' + $(this).data('id') + '"]').show(800);
+            }
+        });
+    });
+</script>
 </html>
