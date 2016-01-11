@@ -20,3 +20,6 @@ body {
 	display: inline-block;
 	text-align: center;
 }
+.box img {
+	height: 100px;
+}
