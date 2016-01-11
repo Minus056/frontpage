@@ -23,3 +23,7 @@ body {
 .box img {
 	height: 100px;
 }
+.links img {
+	display: inline-block;
+	height: 50px;
+}
