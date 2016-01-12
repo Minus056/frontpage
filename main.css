@@ -4,7 +4,13 @@ body {
 }
 h1 {
 	color: #7F3F98;
-	margin: 5px 0 5px 10px;
+	margin: 10px 0 15px 10px;
+}
+h2 {
+	margin: 10px 0 15px 0;
+}
+hr {
+	margin: 20px 0 20px 0;
 }
 .nav ul {
     list-style-type: none;
@@ -75,6 +81,8 @@ h1 {
 	border-bottom: 3px #ccc solid;
 }
 .image {
+	margin-bottom: 30px;
+	padding-top: 10px;
 	height: 200px;
 	background-color: #ccc;
 }
@@ -89,7 +97,7 @@ h1 {
 }
 .badges input {
 	height: 50px;
-	margin-left: 10px;
+	margin: 0 0 15px 10px;
 }
 #hide {
 	display: none;
@@ -103,5 +111,5 @@ h1 {
 .twitter-feed {
 	height: 400px;
 	background-color: antiquewhite;
-	margin: 0 3px 10px 3px;
+	margin: 15px 3px 10px 3px;
 }
