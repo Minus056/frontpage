@@ -5,10 +5,13 @@ html, body {
     padding:0;
 	font-family: "Arial", Helvetica, sans-serif;
 }
-hr {
+.clear {
 	border: none;
 	padding: 5px 0 5px 0;
 	clear: both;
+}
+h1 {
+	color: #7F3F98;
 }
 /*----TOPBAR----*/
 #topbar {
@@ -21,7 +24,7 @@ hr {
 	float: left;
 	margin: 5px 5% 0 15%;
 	border: none;
-	border-radius: 3px;
+	border-radius: 15px;
 	height: 30px;
 	width: 200px;
 }
@@ -39,40 +42,25 @@ hr {
 	color: #7F3F98;
 	text-decoration: none;
 }
-/*----LOGOBAR----*/
-#logobar {
-	box-shadow: 0px 15px 5px #eee;
-	padding-bottom: 20px;
-}
-#logobar img {
-	float: left;
-	height: 100px;
-	margin: 20px 0 20px 15%;
-	display: inline-block;
-}
-#logobar p {
-	margin: 0;
-	padding: 50px 0 0 30px;
-	font-weight: bold;
-	font-size: 3em;
-	color: #7F3F98;
-	display: inline-block;
-}
 /*----NAVBAR----*/
 #navbar {
 	background-color: #7F3F98;
 	height: 40px;
-	margin-top: 5px;
+	margin-top: 100px;
+}
+#logo {
+	width: 200px;
 }
 #navbar ul {
     list-style-type: none;
-	margin-left: 15%;
+	margin: 0 15% 0 15%;
 	padding: 0;
 }
 #navbar li {
 	font-weight: bold;
 	float: left;
 	margin: 0 auto;
+	width: 14%;
 }
 #navbar li a {
     display: block;
@@ -83,6 +71,11 @@ hr {
 }
 #navbar li a:hover {
     background-color: #111;
+}
+#navbar img {
+	float: left;
+	margin-top: -50px;
+	height: 150px;
 }
 /*----IMAGE SLIDER----*/
 .slidertext {
@@ -152,7 +145,7 @@ hr {
     background-color: #CCCCCC;
     padding: 5px;
     border-radius: 50%;
-    border: 3px black solid;
+
 }
 #navLinks ul li:hover {
     background-color: #FFFF00;
@@ -175,7 +168,7 @@ hr {
 .recent-updates {
 	width: 23%;
 	float: right;
-	background-color: #FFDB88;
+	/*background-color: #FFDB88;*/
 	display: inline-block;
 	margin-right: 15%;
 	margin-top: 20px;
@@ -195,18 +188,63 @@ hr {
 /*----L/T_B/P----*/
 #group {
 	margin: 20px 15% 0 15%;
-	border: 10px #ccc solid;
+	width: 70%;
 }
 #group img {
 	padding: 5px 0 0 5px;
 }
-#group div {
-	display: inline-block;
-	width: 30%;
+#group td {
+	width: 32%;
+	padding: 10px;
+	color: #fff;
+	background-color: #7F3F98;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
 }
-.marg {
-	margin-right: 3%;
-	border-right: 5px #aaa solid;
+#group a {
+	color: #fff;
+}
+/*----MEDIA----*/
+#media {
+	margin: 20px 15% 0 15%;
+	width: 70%;
+}
+#twitter {
+	width: 31.5%;
+	float: left;
+	margin-right: 10px;
+}
+#twitterfeed {
+	height: 500px;
+	background-color: #ccc;
+}
+#vids-and-potw {
+	width: 31.5%;
+	float: left;
+	margin: 0 10px 0 10px;
+}
+#vid iframe {
+	width: 100%;
+	margin-bottom: 10px;
+}
+#potw {
+	text-align: center;
+}
+#potw img {
+	width: 50%;
+}
+#ranks {
+	width: 31.5%;
+	float: left;
+	margin-left: 10px;
+}
+#psranks {
+	height: 230px;
+	background-color: #ccc;
+}
+#stats {
+	height: 180px;
+	background-color: #ccc;
 }
 /*----FOOTER----*/
 #div {
