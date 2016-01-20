@@ -11,7 +11,7 @@ html, body {
 	clear: both;
 }
 h1 {
-	color: #7F3F98;
+	color: #6363B0;
 }
 /*----TOPBAR----*/
 #topbar {
@@ -39,12 +39,12 @@ h1 {
 	font-size: .9em;
 }
 #socialbar a {
-	color: #7F3F98;
+	color: #6363B0;
 	text-decoration: none;
 }
 /*----NAVBAR----*/
 #navbar {
-	background-color: #7F3F98;
+	background-color: 6363B0;
 	height: 40px;
 	margin-top: 100px;
 }
@@ -197,7 +197,7 @@ h1 {
 	width: 32%;
 	padding: 10px;
 	color: #fff;
-	background-color: #7F3F98;
+	background-color: #6363B0;
 	border-top-right-radius: 50px;
 	border-bottom-left-radius: 50px;
 }
@@ -250,7 +250,7 @@ h1 {
 #div {
 	height: 3px;
 	width: 100%;
-	background-color: #7F3F98;
+	background-color: #6363B0;
 	margin: 30px 0 10px 0;
 }
 #footer {
